@@ -4,6 +4,7 @@ import  {Home} from './components/Home'
 import  {About} from './components/About'
 import Navbar from './components/Navbar';
 import OrderConfirm from './components/OrderConfirm';
+import NoMatch from './components/NoMatch';
 
 
 function App() {
@@ -15,6 +16,7 @@ function App() {
       <Route path='/' element={<Home />}></Route>
       <Route path='about' element={<About />}></Route>
       <Route path='order-cofirmed' element={<OrderConfirm/>}></Route>
+      <Route path='*' element={<NoMatch/>}></Route>
      </Routes>    
     </>
 
